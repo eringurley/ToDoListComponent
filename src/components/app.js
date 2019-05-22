@@ -10,7 +10,7 @@ class App extends Component {
 
         const main = dom.querySelector('main');
         dom.insertBefore(headerDOM, main);
-    };
+    }
 
     renderTemplate(){
         return /*html*/`
