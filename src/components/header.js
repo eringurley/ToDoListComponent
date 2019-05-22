@@ -1,7 +1,14 @@
-import App from './App.js';
+import Component from './Component.js';
 
-const app = new App();
-const appDOM = app.render();
+class Header extends Component {
 
-const root = document.getElementById('app');
-root.appendChild(appDOM);
+    renderTemplate() {
+        return /*html*/`
+        <header>
+            <h1 id="header">To Do List</h1>
+        </header>
+`;
+    }
+}
+
+export default Header;
