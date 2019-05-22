@@ -7,10 +7,9 @@ body {
 
 input {
     justify-content: right;
-
 }
 
-main{
+body {
     display: flex;
     justify-content: center;
     align-content: center;
