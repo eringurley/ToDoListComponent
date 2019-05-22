@@ -1,14 +1,14 @@
 import Component from './Component.js';
-import ToDoItem from './ImageItem.js';
+import ToDoItem from './ToDoItem.js';
 
 class ToDoList extends Component {
     render() {
 
         const list = this.renderDOM();
-        const images = this.props.images;
+        const todos = this.props.todos;
         
-        images.forEach(image => {
-            const toDoItem = new ToDoItem({ image });
+        todos.forEach(todo => {
+            const toDoItem = new ToDoItem({ todo });
             const toDoItemDOM = toDoItem.render();
             list.appendChild(toDoItemDOM);
         });

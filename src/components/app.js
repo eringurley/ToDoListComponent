@@ -23,8 +23,8 @@ class App extends Component {
             }
         });
 
-        const addImageDOM = addToDo.render();
-        main.appendChild(addImageDOM);
+        const addToDoDOM = addToDo.render();
+        main.appendChild(addToDoDOM);
 
         const toDoList = new ToDoList({ todos });
         const toDoListDOM = toDoList.render();
@@ -36,8 +36,6 @@ class App extends Component {
         return /*html*/`
         <div>
             <main>
-                <ul id="todos">
-                </ul>
             </main>
         </div>
         `;

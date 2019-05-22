@@ -2,9 +2,9 @@ import Component from './Component.js';
 
 class ToDoItem extends Component {
     renderTemplate(){
-        const text = this.props.todo;
+        const todo = this.props.todo;
         return /*html*/ `
-        <h1 id="header">${text.task}</h1>
+        <h1 id="header">${todo.title}</h1>
     `;
     }
 }

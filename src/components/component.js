@@ -6,10 +6,10 @@ class Component {
     }
     
     render() {
-        return this.renderDom();
+        return this.renderDOM();
     }
 
-    renderDom() {
+    renderDOM() {
         const html = this.renderTemplate();
         const dom = htmlToDOM(html);
         this.rootElement = dom;

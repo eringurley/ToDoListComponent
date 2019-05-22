@@ -12,7 +12,6 @@ class AddToDo extends Component {
             const formData = new FormData(form);
 
             const newToDo = {
-                url: formData.get('url'),
                 title: formData.get('title'),
                 description: formData.get('description')
             };
@@ -28,7 +27,7 @@ class AddToDo extends Component {
     renderTemplate() {
         return /*html*/`
             <form>
-                <label>Task:<input name="todo"></label>
+                <label>Task:<input name="title"></label>
                 <label>Description:<input name="description"></label>
                 <button>Add</button>
             </form>

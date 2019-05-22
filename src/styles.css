@@ -19,11 +19,11 @@ h1 {
 #todos {
     display: flex;
     flex-direction: column;
-    border: solid 3px #09274d;
+    border: solid 5px #09274d;
     border-radius: 10%;
-    padding: 10px 10px 10px 10px;
+    padding: 5px 5px 5px 5px;
     background-color: #70afc2;
-    font-size: 1.5em;
+    font-size: 1em;
     color: rgb(50, 182, 171);
 }
 
