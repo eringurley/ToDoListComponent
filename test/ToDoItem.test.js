@@ -11,7 +11,11 @@ test('todo item template', assert => {
     };
 
     const expected = /*html*/ `
-     <h1 id="header">Homework</h1>
+    <li>
+        <label>
+            <input type="checkbox" checked/>
+            <h1 id="header">Homework</h1>
+        </label>
     `;
     //act
     const toDoItem = new ToDoItem({ todo });
