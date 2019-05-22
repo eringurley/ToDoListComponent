@@ -1,19 +1,26 @@
-const todos = [
-    {
-        task: 'Homework',
-        label: 'homework',
-        completed: true
-    }, 
-    {   
-        task: 'Make Lunch',
-        label: 'make-lunch',
-        completed: true
-    },
-    {   
-        task: 'Clean House',
-        label: 'clean-house',
-        completed: false
-    },
-];
+import Component from './Component.js';
+import ToDoItem from './ImageItem.js';
 
-export default todos;
+class ToDoList extends Component {
+    render() {
+
+        const list = this.renderDOM();
+        const images = this.props.images;
+        
+        images.forEach(image => {
+            const toDoItem = new ToDoItem({ image });
+            const toDoItemDOM = toDoItem.render();
+            list.appendChild(toDoItemDOM);
+        });
+                
+        return list;
+    }
+    
+    renderTemplate() {
+        return /*html*/ `
+            <ul id="todos"></ul>
+        `;
+    }
+}
+
+export default ToDoList;
