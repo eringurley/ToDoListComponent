@@ -12,8 +12,8 @@ class ToDoItem extends Component {
         return /*html*/ `
         <li>
             <label>
-                <input type="checkbox" ${checked}>
-                ${todo.title}
+                <input type="checkbox" ${checked}/>
+                ${todo.task}
             </label>
         `;
     }

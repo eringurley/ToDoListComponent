@@ -1,16 +1,16 @@
 const todos = [
     {
-        'title': 'Homework',
+        'task': 'Homework',
         'description': 'Code, read, repeat.',
         'keyword': 'homework',
     },
     {
-        'title': 'Make Lunch',
+        'task': 'Make Lunch',
         'description': 'Four of them.',
         'keyword': 'make-lunch',
     },
     {
-        'title': 'Clean House',
+        'task': 'Clean House',
         'description': 'Kitchen, laundry, dishes, more laundry, water plants, rinse, repeat.',
         'keyword': 'clean-house',
     },
