@@ -4,16 +4,18 @@ function filterTodo(todos, filter) {
     return todos.filter(todo => {
         const task = todo.task.toLowerCase();
         const isCompleted = todo.completed.toString();
-        // const description = todo.description.toLowerCase();
-        // const keyword = todo.keyword.toLowerCase();
+        const notCompleted = todo.completed.toString();
 
         const hasText = !text
             || task.includes(text);
         
-        const isDone = isCompleted.includes(completed);
+        let isDone = isCompleted.includes(completed);
+        let notDone = notCompleted.includes(notCompleted);
 
-        return hasText && isDone;
+        return hasText && isDone && notDone;
     });
 }
 
 export default filterTodo;
+
+// if completed === 'all' the set is done to true

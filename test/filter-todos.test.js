@@ -87,15 +87,16 @@ test('filter todos by completed', assert => {
 test('filter todos by not completed', assert => {
     // arrange
     const filter = {
-        text: 'Homework',
+        text: 'Clean House',
         completed: 'false'
     };
     const filtered = filterToDo(todos, filter);
     // act
     // assert
     assert.deepEqual(filtered, [{ 
-        'task': 'Homework',
-        'description': 'Code, read, repeat.',
-        'keyword': 'homework',
+        'task': 'Clean House',
+        'description': 'Kitchen, laundry, dishes, more laundry, water plants, rinse, repeat.',
+        'keyword': 'clean-house',
+        'completed': false
     }]);
 });
