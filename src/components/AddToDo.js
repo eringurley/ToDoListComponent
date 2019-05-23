@@ -12,7 +12,7 @@ class AddToDo extends Component {
             const formData = new FormData(form);
 
             const newToDo = {
-                title: formData.get('title'),
+                task: formData.get('title'),
                 description: formData.get('description')
             };
 
