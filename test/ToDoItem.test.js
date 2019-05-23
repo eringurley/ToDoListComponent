@@ -6,7 +6,7 @@ test('todo item template', assert => {
     //arrange
     const todo = {
         task: 'Homework',
-        label: 'homework',
+        label: 'Homework',
         completed: true
     };
 
@@ -14,7 +14,7 @@ test('todo item template', assert => {
     <li>
         <label>
             <input type="checkbox" checked/>
-            <h1 id="header">Homework</h1>
+            Homework
         </label>
     `;
     //act
