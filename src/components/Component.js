@@ -1,5 +1,4 @@
 import htmlToDOM from '../html-to-dom.js';
-//have three radio buttons-one is all, true, and false when you get the word all none of your dodos are gonna have all, if the filter.completed is string 'all' then set the filter 
 class Component {
     constructor(props) {
         this.props = props;
