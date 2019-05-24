@@ -33,7 +33,8 @@ class App extends Component {
                 const filtered = filterTodo(todos, filter);
                 toDoList.update({ todos: filtered });
             }
-        })
+        });
+        main.appendChild(filter.render());
 
         const toDoList = new ToDoList({ todos });
         const toDoListDOM = toDoList.render();
