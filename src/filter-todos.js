@@ -1,18 +1,19 @@
 function filterTodo(todos, filter) {
     const text = filter.text.toLowerCase();
-    const completed = filter.completed;
+    const completed = filter.completed.toString();
     return todos.filter(todo => {
         const task = todo.task.toLowerCase();
         const isCompleted = todo.completed.toString();
-        const notCompleted = todo.completed.toString();
 
         const hasText = !text
             || task.includes(text);
         
         let isDone = isCompleted.includes(completed);
-        let notDone = notCompleted.includes(notCompleted);
+        if(completed === 'all') {
+            isDone = true;
+        }
 
-        return hasText && isDone && notDone;
+        return hasText && isDone;
     });
 }
 

@@ -10,6 +10,7 @@ class Filter extends Component {
         form.addEventListener('input', () => {
             const checkedRadio = form.elements['radio-button'].value;
             const textInput = form.elements['task'].value;
+            console.log(checkedRadio);
             this.props.onFilter({
                 text: textInput, 
                 completed: checkedRadio
@@ -24,10 +25,16 @@ class Filter extends Component {
             <form>
                 <span class="search">👓</span>
                 <input id="text" name="task" placeholder="type here">
-                <input name="radio-button" type="checkbox" value="true">
-                <input name="radio-button" type="checkbox" value="false">
-                <input name="radio-button" type="checkbox" value="all">
-            </form>
+                <label for = "radio-button"> Completed
+                <input name="radio-button" type="radio" value="true">
+                </label>
+                <label for = "radio-button"> Not Completed
+                <input name="radio-button" type="radio" value="false">
+                </label>
+                <label for = "readio=button"> All
+                <input name="radio-button" type="radio" value="all">
+                </label>
+                </form>
         </section>
         `;
     }

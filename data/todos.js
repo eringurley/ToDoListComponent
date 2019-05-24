@@ -3,13 +3,13 @@ const todos = [
         'task': 'Homework',
         'description': 'Code, read, repeat.',
         'keyword': 'homework',
-        'completed': true
+        'completed': false
     },
     {
         'task': 'Make Lunch',
         'description': 'Four of them.',
         'keyword': 'make-lunch',
-        'completed': true
+        'completed': false
     },
     {
         'task': 'Clean House',
